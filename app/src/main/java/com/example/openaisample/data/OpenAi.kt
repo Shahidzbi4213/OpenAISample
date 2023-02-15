@@ -13,7 +13,7 @@ import retrofit2.http.POST
 
 
 interface OpenAi {
-    @Headers("Authorization: Bearer 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")
+    @Headers("Authorization: Bearer your_key_here")
     @POST("v1/completions")
     suspend fun getCompletion(@Body request: Request): Response<ApiData>
 }
